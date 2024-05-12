@@ -39,6 +39,8 @@ header {
 main {
     display: flex;
     flex-wrap: wrap;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
 }
 
 .movie {
@@ -118,3 +120,59 @@ footer {
     color: white;
     text-align: center;
   }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #0f2027;
+    background: -webkit-linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    text-align: center;
+}
+
+/* Pagination buttons */
+footer button {
+    margin: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #373b69;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer button:hover {
+    background-color: #22254b;
+}
+#pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#pagination-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+#pagination-buttons button  {
+    padding: 5px 10px;
+    background-color: #373b69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#pagination-buttons button.active {
+    background-color: #22254b;
+}
+
+#prev , #next{
+    margin: 10px;
+}
